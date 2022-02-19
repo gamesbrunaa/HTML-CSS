@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -34,6 +35,12 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th { /* Cabeçalho Fixo */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        } /* Não funciona em todos os navegadores */
 
         .num{
             text-align: right;
