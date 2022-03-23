@@ -1,0 +1,180 @@
+body {
+	background-color: #506980;
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+    width: 100%;
+    height: 150px;
+	text-align: center;
+	font-size: 54px;
+    background-color: #2A5680;
+    margin: 0px;
+    padding-top: 50px;
+    box-shadow: 5px 9px 3px rgba(0, 0, 0, 0.301);
+}
+
+h1 > img{
+    text-align: center;
+    max-width: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+    border: 1px black solid;
+    box-shadow: 5px 9px 2px rgba(0, 0, 0, 0.322);
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 48%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+
+.fire {
+	background-color: #A1D1FF;
+}
+
+.grass {
+	background-color: #54ACFF;
+}
+
+.electric {
+	background-color: #438ACC;
+}
+
+.water, .ice {
+	background-color: #A1D1FF;
+}
+
+.ground {
+	background-color: #83F7D0;
+}
+
+.rock {
+	background-color: #38F5B6;
+}
+
+.fairy {
+	background-color: #2DC290;
+}
+
+.poison {
+	background-color: #1B7557;
+}
+
+.bug {
+	background-color: #F79A83;
+}
+
+.dragon {
+	background-color: #F55E38;
+}
+
+.psychic {
+	background-color: #C24A2D;
+}
+
+.flying {
+	background-color: #F9D7CE;
+}
+
+.fighting {
+	background-color: #C47B68;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+    background-color: white;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+    color: black;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: black;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+footer{
+    background-color: #2A5680;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #54ACFF;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
